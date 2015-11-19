@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja" itemscope itemtype="http://schema.org/Blog">
+
+<head>
+	<script type="text/javascript" src="<$BaseUrl$>/syntaxhighlighter/syntaxhighlighter.config.js"></script>
+	<script src="http://parts.blog.livedoor.jp/js/usr/import.js"></script>
+	<!-- Syntax Highlighterのファイルを読み込む -->
+	<link href="<$BaseUrl$>/syntaxhighlighter/css/shCore.css" rel="stylesheet" type="text/css" />
+	<link href="<$BaseUrl$>/syntaxhighlighter/css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+	<script src="<$BaseUrl$>/syntaxhighlighter/scripts/shCore.js" type="text/javascript"></script>
+	<script src="<$BaseUrl$>/syntaxhighlighter/scripts/shAutoloader.js" type="text/javascript"></script>
+	<!-- Syntax Highlighterのそれぞれの言語ファイルを呼び出すスクリプト -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			function path(){
+				var args = arguments,result = [];
+				for(var i = 0; i < args.length; i++)
+					result.push(args[i].replace('@', '<$BaseUrl$>/syntaxhighlighter/scripts/'));
+				return result
+			};
+			SyntaxHighlighter.autoloader.apply(null, path(
+		'applescript            @shBrushAppleScript.js',
+		'actionscript3 as3      @shBrushAS3.js',
+		'bash shell             @shBrushBash.js',
+		'coldfusion cf          @shBrushColdFusion.js',
+		'cpp c                  @shBrushCpp.js',
+		'c# c-sharp csharp      @shBrushCSharp.js',
+		'css                    @shBrushCss.js',
+		'delphi pascal          @shBrushDelphi.js',
+		'diff patch pas         @shBrushDiff.js',
+		'erl erlang             @shBrushErlang.js',
+		'groovy                 @shBrushGroovy.js',
+		'java                   @shBrushJava.js',
+		'jfx javafx             @shBrushJavaFX.js',
+		'js jscript javascript  @shBrushJScript.js',
+		'perl pl                @shBrushPerl.js',
+		'php                    @shBrushPhp.js',
+		'text plain             @shBrushPlain.js',
+		'py python              @shBrushPython.js',
+		'ruby rails ror rb      @shBrushRuby.js',
+		'sass scss              @shBrushSass.js',
+		'scala                  @shBrushScala.js',
+		'sql                    @shBrushSql.js',
+		'swift                   @shBrushSwift.js',
+		'vb vbnet               @shBrushVb.js',
+		'xml xhtml xslt html    @shBrushXml.js'
+		));
+		SyntaxHighlighter.defaults['toolbar'] = false;
+		SyntaxHighlighter.all();
+	});
+	</script>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title><$BlogTitle ESCAPE$></title>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="<$BaseUrl$>/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="<$BaseUrl$>/css/clean-blog.min.css" rel="stylesheet">
+
+	<!-- Custom Fonts -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="<$BlogUrl$>"><$BlogTitle$></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apple <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="<$BlogUrl$>/archives/cat_602695.html">Apple</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="<$BlogUrl$>/archives/cat_616658.html">OS X Yosemite</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="<$BlogUrl$>/archives/cat_883726.html">iOS</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="<$BlogUrl$>/archives/cat_787721.html">Windows</a>
+					</li>
+					<li>
+						<a href="<$BlogUrl$>/archives/cat_684621.html">Android</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Web <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="<$BlogUrl$>/archives/cat_569348.html">Web</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="<$BlogUrl$>/archives/cat_569345.html">プラウザ</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="<$BlogUrl$>/archives/cat_738377.html">アプリケーション</a></li>
+						</ul>
+					<li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">プログラミング <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+						<li role="separator" class="divider"></li>
+							<li><a href="<$BlogUrl$>/archives/cat_932498.html">C</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="<$BlogUrl$>/archives/cat_569344.html">PHP</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="<$BlogUrl$>/archives/cat_887891.html">JavaScript</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="<$BlogUrl$>/archives/cat_613428.html">Swift</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Server <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="<$BlogUrl$>/archives/cat_1163907.html">Server</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="<$BlogUrl$>/archives/cat_1160187.html">FreeNAS</a></li>
+							</li>
+						</ul>
+					<li>
+					<li>
+						<a href="<$BlogUrl$>/archives/cat_569462.html">ガジェット</a>
+					</li>
+					<li>
+						<a href="<$BlogUrl$>/archives/cat_569343.html">その他</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+
+	<!-- Page Header -->
+	<!-- Set your background image for this header on the line below. -->
+	<header class="intro-header" style="background-image: url('<$BlogHeaderImageUrl$>')">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<div class="site-heading">
+						<h1><$BlogTitle ESCAPE$></h1>
+						<hr class="small">
+						<IfBlogDescription>
+						<span class="subheading"><$BlogDescription$></span>
+						</IfBlogDescription>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<IfIsTagTemplate>タグ：<$TagName ESCAPE$></IfIsTagTemplate>
+	<IfIsSearchTemplate>キーワード：<$SearchKeywords ESCAPE$>を含む記事</IfIsSearchTemplate>
+	<IfIsAuthorTemplate><$AuthorName ESCAPE$></IfIsAuthorTemplate>
+	<UnlessIsTagTemplate><UnlessIsSearchTemplate><UnlessIsAuthorTemplate>
+	カテゴリ：<IfHasParentCategory><a href="<$ParentCategoryUrl$>"><$ParentCategoryName ESCAPE$></a> &gt; </IfHasParentCategory>
+	<a href="<$CategoryUrl$>"><$CategoryName ESCAPE$></a>
+	</UnlessIsAuthorTemplate></UnlessIsSearchTemplate></UnlessIsTagTemplate>
+	
+	<!-- google_ad_section_start -->
+		<CategorizedArticlesLoop>
+		<$TrackBackAutoDiscovery$>
+	<!-- Main Content -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="post-preview">
+					<a href="post.html">
+						<h2 class="post-title" itemprop="name">
+						<a href="<$ArticlePermalink$>" itemprop="url"><$ArticleTitle ESCAPE$></a></h2>
+						<$CommonTheme$><$ArticleBody$>
+					</a>
+				</div>
+				<div>
+					<IfArticleBodyMore><a class="btn btn-primary pull-right" href="<$ArticlePermalink$>#more">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+					</IfArticleBodyMore>
+						<$ArticleTagsList$>
+				</div>
+				<p class="post-meta">Posted by <a href="<$BlogUrl$>"><$BlogTitle$> </a><time datetime="<$ArticleDateISO8601$>" itemprop="datePublished"><span class="glyphicon glyphicon-time"></span><$ArticleDateYear$>-<$ArticleDateMonth$>-<$ArticleDateDay$></time></p>
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Newtral -->
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1435287408961182" data-ad-slot="2912469153" data-ad-format="auto"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+
+				<hr>
+			</div>
+		</div>
+		<IfFirstArticle><$Advertise$></IfFirstArticle>
+		</CategorizedArticlesLoop>
+		<!-- google_ad_section_end -->
+	</div>
+
+	<!-- Pager -->
+				<ul class="pager">
+					<SetVar NavigatorType>2</SetVar>
+					<SetVar NavigatorPrevPageText>Prev</SetVar>
+					<SetVar NavigatorNextPageText>Next</SetVar>
+					<$IndexNavigator$>
+				</ul>
+	<hr>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+		<!-- カテゴリ & アーカイブ -->
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div><h3>Categories</h3></div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+							<ul>
+								<li><a href="<$BlogUrl$>/archives/cat_602695.html">Apple</a></li>
+								<li><a href="<$BlogUrl$>/archives/cat_616658.html">OS X Yosemite</a></li>
+								<li><a href="<$BlogUrl$>/archives/cat_883726.html">iOS</a></li>
+								<li><a href="<$BlogUrl$>/archives/cat_787721.html">Windows</a></li>
+								<li><a href="<$BlogUrl$>/archives/cat_684621.html">Android</a></li>
+								<li><a href="<$BlogUrl$>/archives/cat_569348.html">Web</a></li>
+								<li><a href="<$BlogUrl$>/archives/cat_569345.html">プラウザ</a></li>
+								<li><a href="<$BlogUrl$>/archives/cat_738377.html">アプリケーション</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6">
+							<ul>
+								<li><a href="<$BlogUrl$>/archives/cat_932498.html">C</a></li>
+								<li><a href="<$BlogUrl$>/archives/cat_569344.html">PHP</a></li>
+								<li><a href="<$BlogUrl$>/archives/cat_887891.html">JavaScript</a></li>
+								<li><a href="<$BlogUrl$>/archives/cat_613428.html">Swift</a></li>
+								<li><a href="<$BlogUrl$>/archives/cat_1163907.html">Server</a></li>
+								<li><a href="<$BlogUrl$>/archives/cat_1160187.html">FreeNAS</a></li>
+									<li><a href="<$BlogUrl$>/archives/cat_569462.html">ガジェット</a></li>
+								<li><a href="<$BlogUrl$>/archives/cat_569343.html">その他</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div><h3>Archive</h3></div>
+					<div class="col-lg-6 col-md-6">
+						<ul>
+							<li><a href="<$BlogUrl$>/archives/2015-11.html">2015-11</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-10.html">2015-10</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-09.html">2015-09</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-08.html">2015-08</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-07.html">2015-07</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-06.html">2015-06</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-05.html">2015-05</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-04.html">2015-04</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-03.html">2015-03</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-02.html">2015-02</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-01.html">2015-01</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<ul>
+							<li><a href="<$BlogUrl$>/archives/2015-12.html">2014-12</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-11.html">2014-11</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-10.html">2014-10</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-09.html">2014-09</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-08.html">2014-08</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-07.html">2014-07</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-06.html">2014-06</a></li>
+							<li><a href="<$BlogUrl$>/archives/2015-05.html">2014-05</a></li>
+							<li><a href="<$BlogUrl$>/archives/2013-04.html">2014-04</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- カテゴリ & アーカイブ  -->
+
+			<hr>
+
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<ul class="list-inline text-center">
+						<li>
+							<a href="https://twitter.com/yukky33142405" class="twitter-follow-button" data-show-count="false">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/yufyukky">
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-github fa-stack-1x fa-inverse"></i>
+								</span>
+							</a>
+						</li>
+					</ul>
+					<p class="copyright text-muted" align="center">Copyright &copy; <$BlogTitle ESCAPE$></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="<$BaseUrl$>/js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="<$BaseUrl$>/js/bootstrap.min.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="<$BaseUrl$>/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
